@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogaria Assunção</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="navegacao">
+        <header>
+            <img class="logotipo" src="./assets/img/Logotipo.png" alt="Logotipo da Droigaria Assuncao">
+        </header>
+    
+        <nav>
+            <a href="#">Página Inicial</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown dropdown-toggle" data-bs-toggle="dropdown">
+                    Produtos
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href="">Medicamentos por Condição</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href="">Saúde da Mulher</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href="">Saúde Infantil</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href="">Vitaminas e Suplementos</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href=""> Saúde Mental</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href=""> Diabetes</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="link-produtos" href=""> Higiene Pessoal</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">Assistência Farmacêutica</a>
+            <a href="#">Área do Cliente</a>
+            <div class="search-space">
+                <input class="form-control" type="text" placeholder="Pesquisa">
+                <button class="btn btn-primary" type="submit"><img src="./assets/img/🦆 icon _search_.png" alt=""></button>
+            </div>
+        </nav>
+    
+    </div>
+
+    <div id="carousel-banners" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./assets/img/banner1.png"/>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./assets/img/Frame 1.png"/>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./assets/img/banner3.png"/>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-banners" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-banners" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-banners" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-banners" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-banners" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <section id="banner">
+        <h2>Produtos</h2>
+        <p>Grandes descontos em produtos farmacêuticos de qualidade.</p>
+        <a href="produtos.html">Todos os produtos</a>
+    </section>
+
+   <!-- <section id="featured-products">
+        <div class="product">
+            <img src="./assets/img/inicio1.png" alt="Produto 1">
+            <h3>Loreal Elvive</h3>
+            <p>Extraordinary Oil é um condicionador nutritivo para cabelos secos a 
+                muito secos.</p>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="./assets/img/inicio2.png" alt="Produto 2">
+            <h3>Fralda Pampers</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Nulla iure eum, doloribus sequi illum sint.</p>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="./assets/img/inicio3.png" alt="Produto 3">
+            <h3>Panadol 500/65mg</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Enim laboriosam voluptatem maxime illo pariatur ratione?</p>
+            <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+    </section>
+    -->
+
+    <section class="produtos">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col mb-5">
+                <div class="product">
+                    <img src="./assets/img/inicio1.png" alt="Produto 1">
+                    <div>
+                        <h3>Loreal Elvive</h3>
+                    <p>Extraordinary Oil é um condicionador nutritivo para cabelos secos a 
+                        muito secos.</p>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="product">
+                    <img src="./assets/img/inicio2.png" alt="Produto 2">
+                    <h3>Fralda Pampers</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Nulla iure eum, doloribus sequi illum sint.</p>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="product">
+                    <img src="./assets/img/inicio3.png" alt="Produto 3">
+                    <h3>Panadol 500/65mg</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Enim laboriosam voluptatem maxime illo pariatur ratione?</p>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    </section>
+
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="title mb-5 text-center">Depoimentos</h2>
+                    <div class="mb-5">
+
+                        <div class="depoimento" id="depoimento-1">
+                            <div class="container-dados-depoimento">
+                                <div class="imagem-depoimento"></div>
+                                <div>
+                                    <p class="nome-depoimento"><b>Maria de Jesus</b></p>
+                                    <p class="nota-depoimento">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>&nbsp; <span>4.5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="texto-depoimento">
+                                <i class="bi bi-chat-left-quote-fill"></i>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Ducimus <br>rerum omnis eveniet debitis architecto pariatur 
+                                    neque dicta fuga adipisci repellendus.
+                                </span>
+                                <i class="bi bi-chat-right-quote-fill"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento" id="depoimento-2">
+                            <div class="container-dados-depoimento">
+                                <div class="imagem-depoimento"></div>
+                                <div>
+                                    <p class="nome-depoimento"><b>Gustavo Martins</b></p>
+                                    <p class="nota-depoimento">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>&nbsp; <span>4.5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="texto-depoimento">
+                                <i class="bi bi-chat-left-quote-fill"></i>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Ducimus <br>rerum omnis eveniet debitis architecto pariatur 
+                                    neque dicta fuga adipisci repellendus.
+                                </span>
+                                <i class="bi bi-chat-right-quote-fill"></i>
+                            </p>
+                        </div>
+
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.4378508796917!2d-48.1099433!3d-15.833568399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcd1d55c0744d%3A0x8ae49b2d48310d86!2sDROGARIA%20ASSUN%C3%87%C3%83O%20Farmacia!5e0!3m2!1spt-BR!2sbr!4v1702053990531!5m2!1spt-BR!2sbr" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Adicione outras seções conforme necessário -->
+
+    <footer>
+        <!-- Adicione o rodapé conforme discutido anteriormente -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="titulo-rodape">Produtos</h5>
+                    <ul class="lista-rodape">
+                        <li class="item-produto"><a href="">Medicamentos por Condição</a></li>
+                        <li class="item-produto"><a href="">Saúde da Mulher</a></li>
+                        <li class="item-produto"><a href="">Saúde Infantil</a></li>
+                        <li class="item-produto"><a href="">Vitaminas e Suplementos</a></li>
+                        <li class="item-produto"><a href="">Saúde Mental</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="titulo-rodape">Contatos</h5>
+                    <ul class="lista-rodape">
+                        <li class="item-contatos">(61) 99886-1487</li>
+                        <li class="item-contatos">(61) 3373-6816</li>
+                        <li class="item-contatos">drogariaassuncao22@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="lista">
+                        <li class="lista_item"><a href=""><img src="./assets/img/instagram-icon.png" alt=""></a></li>
+                        <li class="lista_item"><a href=""><img src="./assets/img/facebook-icon.png" alt=""></a></li>
+                        <li class="lista_item"><a href=""><img src="./assets/img/linkedin-icon.png" alt=""></a></li>
+                    </ul>
+                    <p class="cnpj"><strong>CNPJ:</strong> 123.654/0001-65</p>
+                    <P class="endereco"><strong>Endereço:</strong> St. N QNN 22 CONJUNTO J LOTE 01<br>
+                        CEILANDIA SUL, Brasília - DF, 72220-230</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
