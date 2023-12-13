@@ -85,7 +85,8 @@
                 <a class="nav-link" aria-disabled="true">Contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"><i class="bi bi-cart-fill"></i></a>
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart-fill"></i></button>
+                <a class="nav-link"></a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -95,6 +96,18 @@
           </div>
         </div>
       </nav>
+
+      <!--Carrinho de produtos-->
+
+        <div itemid="canvas" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrinho</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
 
     <!--teste navbar-->
 

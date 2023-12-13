@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 1030;
 }
 
 .navbar .container-fluid {
@@ -45,6 +45,10 @@
     top: 0;
     width: 100%;
     z-index: 9999;
+}
+
+#canvas {
+    z-index: 1045;
 }
 
 header {
