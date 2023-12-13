@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navegacao">
+    <!--<div class="navegacao">
         <header>
             <img class="logotipo" src="./assets/img/Logotipo.png" alt="Logotipo da Droigaria Assuncao">
         </header>
@@ -52,7 +52,51 @@
             </div>
         </nav>
     
-    </div>
+    </div>-->
+
+    <nav id="site-nav" class="navbar navbar-expand-lg  pt-4 pb-4 " >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logotipo" src="./assets/img/Logotipo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Página inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </a>
+                <ul class="dropdown-menu dropdown-menu-tertiary">
+                  <li><a class="dropdown-item" href="#">Medicamentos por Condição</a></li>
+                  <li><a class="dropdown-item" href="#">Saúde da Mulher</a></li>
+                  <li><a class="dropdown-item" href="#">Saúde Infantil</a></li>
+                  <li><a class="dropdown-item" href="#">Vitaminas e Suplementos</a></li>
+                  <li><a class="dropdown-item" href="#"> Diabetes</a></li>
+                  <li><a class="dropdown-item" href="#"> Higiene Pessoal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="bi bi-cart-fill"></i></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary " type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--teste navbar-->
 
     <div id="carousel-banners" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -150,67 +194,66 @@
     
     </section>
 
-    <section class="depoimentos" id="depoimentos">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 ">
-                    <h2 class="title mb-5 text-center">Depoimentos</h2>
-                    <div class="mb-5">
+    <!--sessão de depoimentos-->
 
-                        <div class="depoimento" id="depoimento-1">
-                            <div class="container-dados-depoimento">
-                                <div class="imagem-depoimento"></div>
-                                <div>
-                                    <p class="nome-depoimento"><b>Maria de Jesus</b></p>
-                                    <p class="nota-depoimento">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>&nbsp; <span>4.5</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="texto-depoimento">
-                                <i class="bi bi-chat-left-quote-fill"></i>
-                                <span>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Ducimus <br>rerum omnis eveniet debitis architecto pariatur 
-                                    neque dicta fuga adipisci repellendus.
-                                </span>
-                                <i class="bi bi-chat-right-quote-fill"></i>
+    <section class="depoimentos" id="depoimentos">
+
+        <div class="container">
+            <h2 class="title mb-5 text-center">Depoimentos</h2>
+            <div class="row">
+              <div class="col">
+                <div class="depoimento" id="depoimento-1">
+                    <div class="container-dados-depoimento">
+                        <div class="imagem-depoimento"></div>
+                        <div>
+                            <p class="nome-depoimento"><b>Maria de Jesus</b></p>
+                            <p class="nota-depoimento">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>&nbsp; <span>4.5</span>
                             </p>
                         </div>
                     </div>
+                    <p class="texto-depoimento">
+                        <span>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Ducimus <br>rerum omnis eveniet debitis architecto pariatur 
+                            neque dicta fuga adipisci repellendus.
+                        </span>
+                    </p>
                 </div>
+              </div>
 
+              <div class="col">
                 <div class="depoimento" id="depoimento-2">
-                            <div class="container-dados-depoimento">
-                                <div class="imagem-depoimento"></div>
-                                <div>
-                                    <p class="nome-depoimento"><b>Gustavo Martins</b></p>
-                                    <p class="nota-depoimento">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>&nbsp; <span>4.5</span>
-                                    </p>
-                                </div>
+                    <div class="container-dados-depoimento">
+                        <div class="imagem-depoimento"></div>
+                            <div>
+                                <p class="nome-depoimento"><b>Gustavo Martins</b></p>
+                                <p class="nota-depoimento">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>&nbsp; <span>4.5</span>
+                                </p>
                             </div>
-                            <p class="texto-depoimento">
-                                <i class="bi bi-chat-left-quote-fill"></i>
-                                <span>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Ducimus <br>rerum omnis eveniet debitis architecto pariatur 
-                                    neque dicta fuga adipisci repellendus.
-                                </span>
-                                <i class="bi bi-chat-right-quote-fill"></i>
-                            </p>
                         </div>
-
+                        <p class="texto-depoimento">
+                            <span>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Ducimus <br>rerum omnis eveniet debitis architecto pariatur 
+                                neque dicta fuga adipisci repellendus.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+
     </section>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.4378508796917!2d-48.1099433!3d-15.833568399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcd1d55c0744d%3A0x8ae49b2d48310d86!2sDROGARIA%20ASSUN%C3%87%C3%83O%20Farmacia!5e0!3m2!1spt-BR!2sbr!4v1702053990531!5m2!1spt-BR!2sbr" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

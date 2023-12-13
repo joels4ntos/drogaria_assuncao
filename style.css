@@ -11,7 +11,33 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 142px;
+    padding-top: 104px;
+}
+
+#site-nav {
+    background-color: #e6e6e6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar .container-fluid {
+    max-width: 1400px;
+}
+
+.navbar .container-fluid .logotipo {
+    max-width: 200px;
+}
+
+.navbar .container-fluid .navbar-brand {
+    margin-right: 70px;
+}
+
+.navbar .container-fluid a {
+    font-weight: 600;
+    font-size: 18px;
+    color:#0044eb;
 }
 
 .navegacao {
@@ -74,7 +100,7 @@ section {
 }
 
 .produtos {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 #featured-products {
@@ -117,8 +143,9 @@ section {
 /*sessão de depoimentos*/
 
 .depoimentos {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 150px;
+    background-color: #d2ebff;
 }
 
 .container-dados-depoimento {
