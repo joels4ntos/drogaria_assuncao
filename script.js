@@ -45,3 +45,18 @@ function searchPharmaceutical() {
     }
   }
 
+
+  function openModal() {
+    document.getElementById("modal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+
+  function finalizeOrder() {
+    // Adicione aqui a lógica para a finalização do pedido via WhatsApp
+    // Você pode redirecionar para um link do WhatsApp ou realizar outras ações necessárias.
+    alert("Pedido finalizado via WhatsApp!");
+  }
+
