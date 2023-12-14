@@ -10,11 +10,13 @@
     <style>
     
         .box-content {
-            max-width: 700px;
-            margin: 0 auto;
+            max-width: 600px;
+            height: 700px;
             padding: 20px;
             border: 2px solid black;
             border-radius: 10px;
+            background-color: rgba(15, 79, 255, 0.2);
+            border: none;
         }
     
         h1 {
@@ -26,7 +28,7 @@
         form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            text-align: left;
         }
     
         label {
@@ -51,21 +53,56 @@
             cursor: pointer;
         }
     
-       button {
+       #formulario button {
             width: 80px;
             padding: 10px;
             margin-left: auto;
             margin-right: auto;
             font-weight: bolder;
+            margin-top: 20px;
         }
 
-        .formulario-sessao {
+       /* .formulario-sessao {
             padding-top: 80px;
             padding-right: 20px;
             padding-left: 20px;
             padding-bottom: 80px;
+        }*/
+
+        #contato-form img {
+            width: 80%;
         }
-    
+
+        #contato-form {
+            margin-top: 70px;
+        }
+
+        .title-form {
+            margin-bottom: 60px;
+        }
+
+        .form-control {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 40px;
+        }
+
+        .d-flex {
+            align-items: center;
+            padding-top: 0;
+        }
+
+        @media (max-width: 768px) { 
+            #contato-form .row {
+                display: block;
+            }
+
+            .navbar .navbar-brand .logotipo {
+                max-width: 180px;
+            }
+        }
+
+
     
     </style>
 
@@ -101,32 +138,51 @@
 
     <!--sessão formulário-->
 
+    <div id="contato-form" class="container text-center">
+        <h1 class="title-form">Preencha os campos abaixo:</h1>
+        <div class="row">
+          <div class="col">
+            <img src="./assets/img/ilustracao 1.png" alt="">
+          </div>
+          <div class="col">
+        
+            <form id="formulario" class="box-content">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="opcao">Escolha uma das opções:</label>
+                <select id="opcao" name="opcao">
+                    <option value="um Orçamento">Orçamento</option>
+                    <option value="uma Sugestão">Sugestão</option>
+                    <option value="uma Reclamação">Reclamação</option>
+                    <option value="Outros">Outros</option>
+                </select><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <label for="textarea">Mensagem:</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Informe aqui sua mensagem."></textarea>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
     <section class="formulario-sessao">
-        <h1>Preencha os campos abaixo:</h1>
-    <br><br>
-                <form id="formulario" class="box-content">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required><br><br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="opcao">Escolha uma das opções:</label>
-                    <select id="opcao" name="opcao">
-                        <option value="um Orçamento">Orçamento</option>
-                        <option value="uma Sugestão">Sugestão</option>
-                        <option value="uma Reclamação">Reclamação</option>
-                        <option value="Outros">Outros</option>
-                    </select><br><br>
-
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required><br><br>
-
-                    <label for="textarea">Mensagem:</label>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Informe aqui sua mensagem."></textarea>
-
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+        <div class="container">
+            <div class="imagem">
+                
+            </div>
+            <div class="dados">
+    
+            </div>
+    
+        </div>
     </section>
 
 
@@ -141,11 +197,11 @@
                 <div class="col">
                     <h5 class="titulo-rodape">Produtos</h5>
                     <ul class="lista-rodape">
-                        <li class="item-produto"><a href="">Medicamentos por Condição</a></li>
-                        <li class="item-produto"><a href="">Saúde da Mulher</a></li>
-                        <li class="item-produto"><a href="">Saúde Infantil</a></li>
-                        <li class="item-produto"><a href="">Vitaminas e Suplementos</a></li>
-                        <li class="item-produto"><a href="">Saúde Mental</a></li>
+                        <li class="item-produto"><a href="produtos.html">Medicamentos por Condição</a></li>
+                        <li class="item-produto"><a href="produtos.html">Saúde da Mulher</a></li>
+                        <li class="item-produto"><a href="produtos.html">Saúde Infantil</a></li>
+                        <li class="item-produto"><a href="produtos.html">Vitaminas e Suplementos</a></li>
+                        <li class="item-produto"><a href="produtos.html">Saúde Mental</a></li>
                     </ul>
                 </div>
                 <div class="col">
