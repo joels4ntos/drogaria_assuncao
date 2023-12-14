@@ -12,3 +12,36 @@ document.getElementById('formulario').addEventListener('submit', function (event
     window.open(urlWhatsApp, '_blank');
 });
 
+
+
+function searchPharmaceutical() {
+    const apiKey = "SUA_CHAVE_DE_API";
+    const cx = "SEU_CX"; // Substitua pelo seu ID do Google Custom Search Engine
+
+    const searchInput = document.getElementById("searchInput").value;
+    const apiUrl = `https://www.googleapis.com/customsearch/v1?q=${searchInput}&key=${apiKey}&cx=${cx}`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => displayResults(data))
+      .catch(error => console.error('Erro na pesquisa:', error));
+  }
+
+  function displayResults(data) {
+    const resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = "";
+
+    if (data.items) {
+      data.items.forEach(item => {
+        const resultItem = document.createElement("div");
+        resultItem.innerHTML = `
+          <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+          <p>${item.snippet}</p>
+        `;
+        resultsDiv.appendChild(resultItem);
+      });
+    } else {
+      resultsDiv.innerHTML = "<p>Nenhum resultado encontrado.</p>";
+    }
+  }
+
