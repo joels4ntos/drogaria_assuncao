@@ -11,3 +11,4 @@ document.getElementById('formulario').addEventListener('submit', function (event
 
     window.open(urlWhatsApp, '_blank');
 });
+

@@ -10,78 +10,58 @@
 
 </head>
 <body>
-    <div class="navegacao">
-        <header>
-            <img class="logotipo" src="./assets/img/Logotipo.png" alt="Logotipo da Droigaria Assuncao">
-        </header>
-    
-        <nav>
-            <a href="index.html">Página Inicial</a>
-            <div class="dropdown">
-                <a href="#" class="dropdown dropdown-toggle" data-bs-toggle="dropdown">
-                    Produtos
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href="">Medicamentos por Condição</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href="">Saúde da Mulher</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href="">Saúde Infantil</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href="">Vitaminas e Suplementos</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href=""> Saúde Mental</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href=""> Diabetes</a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a class="link-produtos" href=""> Higiene Pessoal</a>
-                    </li>
-                </ul>
-            </div>
-            <a href="#">Assistência Farmacêutica</a>
-            <a href="contato.html">Contato</a>
-            <div class="search-space">
-                <input class="form-control" type="text" placeholder="Pesquisa">
-                <button class="btn btn-primary" type="submit"><img src="./assets/img/🦆 icon _search_.png" alt=""></button>
-            </div>
-        </nav>
-    
-    </div>
+
+    <nav id="site-nav" class="navbar navbar-expand-lg  pt-4 pb-4 " >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logotipo" src="./assets/img/Logotipo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Página inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html" aria-disabled="true">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary " type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
     <!-- Sessão de produtos -->
 
     <section id="page-products">
         <div class="container">
             <div class="row">
-                <h2 class="section-title mb-5">Produtos</h2>
+                <h2 class="section-title mb-5 mt- text-center">Produtos</h2>
             </div>
             <div class="row">
                 <aside class="col-md-2">
                     <div class="nav nav-pills fles-column nav-produtos">
-                        <button type="button" class="fw-bold text-start nav-link active">Medicamentos por Condição</button>
-                        <button type="button" class="fw-bold text-start nav-link">Saúde da Mulher</button>
-                        <button type="button" class="fw-bold text-start nav-link">Saúde Infantil</button>
-                        <button type="button" class="fw-bold text-start nav-link">Vitaminas e Suplementos</button>
-                        <button type="button" class="fw-bold text-start nav-link">Saúde Mental</button>
-                        <button type="button" class="fw-bold text-start nav-link">Diabetes</button>
-                        <button type="button" class="fw-bold text-start nav-link">Higiene Pessoal</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#med-condicacao" class="fw-bold text-start nav-link active">Medicamentos por Condição</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#saude-mulher" class="fw-bold text-start nav-link">Saúde da Mulher</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#saude-infantil" class="fw-bold text-start nav-link">Saúde Infantil</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#vitaminas" class="fw-bold text-start nav-link">Vitaminas e Suplementos</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#higiene" class="fw-bold text-start nav-link">Higiene Pessoal</button>
                     </div>
                 </aside>
                 <div class="col-md-10">
                     <div class="tab-content">
-                        <div class="tab-pane active">
+                        <div class="tab-pane active"  id="med-condicacao">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="card card-item">
                                         <div class="img-produto">
-                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                            <img src="./assets/img/condicao/buprofeno.png" alt=""/>
                                         </div>
                                         <p class="title-produto text-center mt-4">
                                             <b>Nome do Produto</b>
@@ -89,19 +69,13 @@
                                         <p class="price-produto text-center">
                                             <b>R$ 154,90</b>
                                         </p>
-                                        <div class="add-carrinho">
-                                            <span class="btn-menos"><i class="bi bi-dash"></i></span>
-                                            <span class="add-numeros-itens">0</span>
-                                            <span class="btn-mais"><i class="bi bi-plus"></i></span>
-                                            <span class="btn btn-add"><i class="bi bi-cart-check-fill btn-add"></i></span>
-                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-3">
                                     <div class="card card-item">
                                         <div class="img-produto">
-                                            <img src="./assets/img/inicio2.png" alt=""/>
+                                            <img src="./assets/img/condicao/dipirona.png" alt=""/>
                                         </div>
                                         <p class="title-produto text-center mt-4">
                                             <b>Nome do Produto</b>
@@ -109,12 +83,6 @@
                                         <p class="price-produto text-center">
                                             <b>R$ 154,90</b>
                                         </p>
-                                        <div class="add-carrinho">
-                                            <span class="btn-menos"><i class="bi bi-dash"></i></span>
-                                            <span class="add-numeros-itens">0</span>
-                                            <span class="btn-mais"><i class="bi bi-plus"></i></span>
-                                            <span class="btn btn-add"><i class="bi bi-cart-check-fill btn-add"></i></span>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -129,12 +97,128 @@
                                         <p class="price-produto text-center">
                                             <b>R$ 154,90</b>
                                         </p>
-                                        <div class="add-carrinho">
-                                            <span class="btn-menos"><i class="bi bi-dash"></i></span>
-                                            <span class="add-numeros-itens">0</span>
-                                            <span class="btn-mais"><i class="bi bi-plus"></i></span>
-                                            <span class="btn btn-add"><i class="bi bi-cart-check-fill btn-add"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/condicao/sodica.png" alt=""/>
                                         </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/condicao/cimegripe.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/condicao/novalgina.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/condicao/perfenol.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/condicao/vitamina.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Segundo Bloco-->
+
+                        <div class="tab-pane" id="saude-mulher">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 68,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio2.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio3.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
                                     </div>
                                 </div>
 
@@ -149,28 +233,446 @@
                                         <p class="price-produto text-center">
                                             <b>R$ 154,90</b>
                                         </p>
-                                        <div class="add-carrinho">
-                                            <span class="btn-menos"><i class="bi bi-dash"></i></span>
-                                            <span class="add-numeros-itens">0</span>
-                                            <span class="btn-mais"><i class="bi bi-plus"></i></span>
-                                            <span class="btn btn-add"><i class="bi bi-cart-check-fill btn-add"></i></span>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
                                         </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+
+                        <!--Terceiro Bloco-->
+
+                        <div class="tab-pane" id="saude-infantil">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 70,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio2.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio3.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--Quarto Bloco-->
+
+                        <div class="tab-pane" id="vitaminas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 85,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio2.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio3.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                         <!--Quinto Bloco-->
+
+                         <div class="tab-pane" id="higiene">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 95,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio2.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio3.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-3">
+                                    <div class="card card-item">
+                                        <div class="img-produto">
+                                            <img src="./assets/img/inicio1.png" alt=""/>
+                                        </div>
+                                        <p class="title-produto text-center mt-4">
+                                            <b>Nome do Produto</b>
+                                        </p>
+                                        <p class="price-produto text-center">
+                                            <b>R$ 154,90</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="col-12 text-center">
-        <a class="fw-bold btn btn-outline-secondary btn-sm botao_vermais">
-            Ver mais
-        </a>
-    </div>
 
     <!-- Adicione outras seções conforme necessário -->
 
@@ -198,8 +700,8 @@
                 </div>
                 <div class="col">
                     <ul class="lista">
-                        <li class="lista_item"><a href=""><img src="./assets/img/instagram-icon.png" alt=""></a></li>
-                        <li class="lista_item"><a href=""><img src="./assets/img/facebook-icon.png" alt=""></a></li>
+                        <li class="lista_item"><a href="https://www.instagram.com/drogariaassuncao22/" target="_blank"><img src="./assets/img/instagram-icon.png" alt=""></a></li>
+                        <li class="lista_item"><a href="https://www.facebook.com/Drogariaassun?locale=pt_BR" target="_blank"><img src="./assets/img/facebook-icon.png" alt=""></a></li>
                         <li class="lista_item"><a href=""><img src="./assets/img/linkedin-icon.png" alt=""></a></li>
                     </ul>
                     <p class="cnpj"><strong>CNPJ:</strong> 123.654/0001-65</p>
